@@ -1,16 +1,15 @@
 ---
-title: "Mundana Free Jekyll Theme"
+title: "文章列表"
 layout: default
 pagination:
     enabled: true
 description: "A great Jekyll theme developed by Sal @wowthemesnet."
-permalink: /blog
 ---
 
 
 <div class="container">
-    
-{% if page.url == "/" %}
+    <hr>
+{% if page.url == "/blog/" %}
     
     
     
@@ -147,7 +146,7 @@ permalink: /blog
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{ post.image }});">	
             </div>
         </div>
     </div>
@@ -170,8 +169,6 @@ permalink: /blog
     <div class="col-md-8 main-loop">
         
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
-        
-
         {% for post in paginator.posts %}
         
             {% include main-loop-card.html %}
@@ -192,7 +189,7 @@ permalink: /blog
                 {% if page == paginator.page %}
                 <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
                 {% elsif page == 1 %}
-                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
+                <li class="page-item"><a class="page-link" href="{{site.baseurl}}">{{ page }}</a></li>
                 {% else %}
                 <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
                 {% endif %}
@@ -204,7 +201,7 @@ permalink: /blog
                 <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
               {% endif %}
             </ul>
-            {% endif %}      
+            {% endif %}
         </div>
         
     </div>

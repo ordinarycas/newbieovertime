@@ -1,5 +1,5 @@
 # Site
-name: '菜加班'
+name: '菜加班 NewbieOvertime'
 description: '菜加班，一個平凡的上班族分享生活、技術的地方！'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -8,9 +8,16 @@ disqus: 'demowebsite'
 email: 'ordinarycas@newbieovertime.work'
 # mailchimp-list: ''
 # timezone: 'Asia/Taipei'
+drafts_dir: _drafts
 
 include: ["_pages"]
-permalink: /blog/:title/
+# permalink: /blog/:title/
+
+#Collections
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title
 
 # Plugins
 plugins: 
@@ -24,7 +31,7 @@ authors:
       name:           Jhan
       site:           https://newbieovertime.work
       avatar:         https://web3-images-api.kibalabs.com/v1/accounts/0xdA3e7efAfB0E3de410ACA788300F0d43948b88e5/image
-      bio:            "Hi, I am Jhan, the author of Mundana, the theme you're currently previewing. I hope you like it!"
+      bio:            "玩點技術的系統分析師"
       email:          ordinarycas@newbieovertime.work
       # twitter:        https://twitter.com/
  
@@ -37,7 +44,7 @@ defaults:
     values:
       layout: post
       author: jhan
-      avatar: /assets/images/avatar1.jpg
+      avatar: https://web3-images-api.kibalabs.com/v1/accounts/0xdA3e7efAfB0E3de410ACA788300F0d43948b88e5/image
       
   # all pages
   - scope:
@@ -50,8 +57,8 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 10
-
+paginate: 6
+paginate_path: "blog/page:num/"
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
