@@ -204,7 +204,7 @@ a.text-dark:hover {
 }
 .navbar-brand {
 	margin-right:2rem;
-	font-size:1.55rem;
+	font-size:1.4rem;
     font-family:"Georgia","Times New Roman",serif;
 }
 .dropdown-item {
@@ -694,6 +694,27 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 	margin-top:2rem;
 	font-weight:600;
 }
+article table {
+	margin: 2rem auto;
+	width: 100%;
+	text-align: center;
+	border-collapse:separate;
+	border-spacing: 0;
+  	border: 1px solid #3a3a3a;
+}
+article table > thead {
+	background-color: #bebebe;
+}
+article table > thead > tr th, article table > tbody > tr td {
+  	border: 1px solid #3a3a3a;
+}
+
+article table tr:hover td{
+	color: #025d45;
+	font-weight: 400;
+	transition: all 0.36s ease-in-out;
+}
+
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
 	position:fixed;

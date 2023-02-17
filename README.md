@@ -25,6 +25,12 @@ categories: [ jekyll, tutorial ]
 
 ```
 
+### 本機環境執行
+
+```
+bundle exec jekyll serve --watch
+```
+
 ### Copyright
 
 Copyright (C) 2023 [newbieovertime.work](newbieovertime.work).
