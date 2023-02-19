@@ -135,16 +135,23 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
+{% if post.tags contains "Podcast" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+            <div class="col-md-6 pt-5 pb-5 pr-lg-4 align-self-center">
                 <h1 class="mb-3">{{post.title}}</h1>
-                <p class="mb-3 lead">
+                <p class="mb-3 text-justify lead">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
-                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+                <!-- <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">閱讀更多</a> -->
+                <a href="https://newbieovertime.firstory.io" target="_blank" class="btn btn-dark">
+                    我的 Podcast 生活
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                    </svg>
+                </a>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{ post.image }});">	
             </div>
@@ -167,7 +174,6 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 <div class="row mt-3">
    
     <div class="col-md-8 main-loop">
-        
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 

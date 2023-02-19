@@ -57,8 +57,8 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 6
-# paginate_path: "blog/page:num/"
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
