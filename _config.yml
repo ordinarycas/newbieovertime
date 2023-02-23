@@ -7,7 +7,8 @@ baseurl: ''
 disqus: 'demowebsite'
 email: 'ordinarycas@newbieovertime.work'
 # mailchimp-list: ''
-# timezone: 'Asia/Taipei'
+locale: 'zh-TW'
+url: "https://newbieovertime.work" # 自己部落格的網址
 drafts_dir: _drafts
 
 include: ["_pages"]
