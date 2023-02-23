@@ -1,6 +1,6 @@
 # Site
 name: '菜加班 NewbieOvertime'
-description: '菜加班，一個平凡的上班族分享生活、技術的地方！'
+description: '菜加班，一個上班族分享生活、技術的地方，也是一個專門為新手或初學者提供相關資訊和知識的部落格。在這提供各種各樣的教學文章和指南，幫助初學者從基礎開始學習各種領域的技能和知識。目前 Podcast 主要分享自己的工作生活，也順便當週記督促自己。'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
