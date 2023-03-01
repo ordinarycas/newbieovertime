@@ -31,8 +31,19 @@ categories: [ jekyll, tutorial ]
 
 ### 本機環境執行
 
+先安裝 Ruby 若想在 Windows 環境下安裝 Ruby Version Manager(RVM) 只能透過 Windows Subsystem for Linux(WSL)，安裝完 Ruby 後可執行下面指令，安裝 bundler 跟 jekyll
+
 ```
-bundle exec jekyll serve --watch
+gem install bundler jekyll
+```
+
+Bundler是用來解決管理Gems相依性問題。簡單來說，因為同一個套件會有很多個版本，所以在使用上就會有套件多版本管理上的問題，而Bundler則是解決這個問題的套件。
+```
+bundle install
+```
+
+```
+bundle exec jekyll serve --watch --drafts
 ```
 
 ### Copyright
