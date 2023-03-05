@@ -3,7 +3,7 @@ layout: post
 title: ".Net Framework 使用 Docker 容器化環境"
 date: 2023-03-01 23:25:00 +0800
 author: jhan
-image: https://picsum.photos/750/500
+image: https://imgur.com/t6hzl0Xl.png
 categories: [Docker]
 tags: [Windows, Docker, .Net Framework]
 ---
